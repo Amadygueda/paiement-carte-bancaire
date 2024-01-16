@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+  
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+.partie1{
+   background-image: url(/image/bg-main-mobile.png);
+width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 380px;
+   position: relative;
+}
+.partie2{
+    display: flex;
+    flex-direction: column;
+    height: 490px;
+    padding-top: 60px;
+  
+
+}
+.carte1{
+    height: 150px;
+ 
+}
+.carte2{
+    height: 150px;
+  
+}
+label{
+    text-transform: uppercase;
+    color: #21092F;
+    font-size: 17px;
+   
+   justify-self: flex-start;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 15px;
+    justify-content: flex-start;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+.donnee{
+    display: flex;
+    flex-direction: row;
+
+   
+    
+}
+.bordur{
+    max-width: 300px;
+    height: 45px;
+   
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    border-radius: 8px;
+    padding-left: 15px;
+    margin-left: 0;
+}
+.label1{
+    margin-bottom: 15px;
+}
+.label2{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.label3{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+input::placeholder{
+   opacity: 0.4;
+   font-size: 17px;
+   color: #21092F;
+}
+.donnee2{
+    width: 80px;
+    height: 34px;
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 3px;
+}
+.leslabel{
+    display: flex;
+    flex-direction: row;
+   
+}
+.cvc{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 40px;
+    
+}
+.donnee3{
+    width: 90px;
+    height: 34px;
+    border: 1px solid var(--Light-Grey, #DFDEE0);
+    border-radius: 5px;
+    padding-left: 10px;
+   justify-self: flex-end;
+   margin-left: 8px;
+}
+.boutton{
+  width: 300px;
+   align-self: center;
+   text-align: center;
+   margin-top: 30px;
+   height: 60px;
+   border-radius: 8px;
+   border: none;
+   background-color: #21092F;
+   color: white;
+   font-size: 20px;
+}
+
+.card1{
+    border-radius: 8px;
+    height: 180px;
+    width: 290px;
+    background-image: url(/image/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 100px;
+    left: 14%;
+    margin-left: 5px;
+
+}
+.card2{
+    position: relative;
+    border-radius: 8px;
+    height: 180px;
+    width: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/image/bg-card-front.png);
+    z-index: 40;
+    top: 50px;
+    left: 7%;
+}
+.logo{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 30px;
+    width: 60px;
+
+}
+.merci{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.merci p{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #21092F;
+    opacity: 0.4;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.merci h1{
+    color: #21092F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.inf2{
+    display: flex;
+    justify-content: space-between;
+}  
+.information >p{
+    color: white;
+    margin-left: 25px;
+    font-size: 1.2rem;
+}
+.droite{
+    display: flex;
+    margin-right: 20px;
+    color: white;
+}
+#numero_cb{
+    margin-bottom: 15px;
+}
+#nom_clien{
+    margin-left: 20px;
+    color: white;
+}
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+.dos{
+    margin-right: 15px;
+}
+#amady{
+    color: white;
+}
+#span1{
+    font-size: 10px;
+}
+#span2{
+    font-size: 10px;
+}
+
+#span3{
+    font-size: 10px;
+}
+#span4{
+    font-size: 10px;
+}
+#span5{
+    font-size: 10px;
+}
+@media (min-width:768px){
+    main{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .partie1{
+        height: 100vh;
+        background-image: url(/image/bg-main-desktop.png)
+        ;
+        width: 40%;
+     
+    }
+    .card1{
+        height: 250px;
+        width: 380px;
+        position: relative;
+        top:550px;
+        left: 55%;
+    }
+    .card2{
+        height: 250px;
+        width: 380px;
+        position: relative;
+       top: 0;
+        left: 50%
+    }
+    .logo{
+       width: 100px;
+       height: 50px;
+    }
+    #numero_cb{
+        font-size: 30px;
+    }
+    #nom_clien{
+        font-size: 20px;
+    }
+    .partie2{
+    margin-left: 27%;
+    margin-top: 10%;
+    }
+    #span1{
+        font-size: 13px;
+    }
+    #span2{
+        font-size: 13px;
+    }
+    
+    #span3{
+        font-size: 13px;
+    }
+    #span4{
+        font-size:13px;
+    }
+    #span5{
+        font-size: 13px;
+    }
+}

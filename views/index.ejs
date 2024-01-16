@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <title>carte_bancaire</title>
+</head>
+<body>
+    <main class="principale">
+       <div class="partie1">
+        <div class="card1">
+          <p id="dos_carte" class="dos">123</p>
+        </div>
+        <div class="card2">
+            <img src="/image/card-logo.svg  " alt="" class="logo">
+            <div class="information">
+                <p id="numero_cb">0000 0000 0000 0000 </p>
+                <div class="inf2">
+            
+                    <p id="nom_clien">amady Gueda Badji</p>
+               
+                
+                 <div class="droite">
+                    <p id="date_carte">11</p>
+                    <p>/</p>
+                    <p id="mois_carte">98</p>
+                 </div>
+
+                </div>
+            </div>
+
+        </div>
+       </div>
+      <form action="/soumetre" method="post" class="partie2" id="formulaire">
+        <div class="partie_nom form" >
+            <label for="nom" class="label1">Nom au complet</label>
+            <input type="text" name="nom" placeholder="e.g. Amady Gueda" class="bordur" id="ragex1" required>
+            <span id="span1"></span>
+        </div>
+        <div class="partie_nom form">
+            <label for="numero" class="label2">Numero de carte</label>
+            <input type="tel" name="numero" placeholder="e.g. 1234 5678 9123 0000" class="bordur" id="ragex2" required  >
+            <span id="span2"></span>
+        </div>
+        <div class="partie_cvc form">
+            <div class="leslabel">
+                <label for="mois" class="label3"> exp . date(mm/yy) </label>
+                <label for="cv" class="cvc">cvc</label>
+            </div>
+            
+            <div class="donnee">
+                <div>
+                    <input type="tel" name="mois" placeholder="MM" class="donnee2"   id="ragex3" required>    <br>
+             
+                <span id="span3"></span>
+                <br>
+                <br>
+                <br>
+                </div>
+                <div>
+                    <input type="tel" name="annee" placeholder="YY" class="donnee2"   id="ragex4" required>
+                    <br>
+                    <span id="span4"></span>
+                    <br>
+                   
+                </div>
+                
+                <div>
+                    <input type="tel" name="cv" placeholder="e.g.123" class="donnee3" id="ragex5" required>
+                    <br>
+                    <span id="span5"></span>
+                    <br>
+
+                </div>
+                
+            </div>
+        </div>
+      <input type="submit" value="Confirmer" class="boutton">
+        
+      </form>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

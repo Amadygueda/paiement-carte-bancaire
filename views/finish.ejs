@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <title>carte_bancaire</title>
+</head>
+<body>
+    <main class="principale">
+        <div class="partie1">
+            <div class="card1">
+                    <% if(locals.cvc) {%>
+                        <p id="dos_carte" class="dos"> <%=cvc %></p>
+                   
+                  <% } else{ %>
+                    <p id="dos_carte">123</p>
+                    <% } %>
+            </div>
+            <div class="card2">
+                <img src="/image/card-logo.svg  " alt="" class="logo">
+                <div class="information">
+                    <% if(locals.numero){ %>
+                        <p id="numero_cb"><%= numero%> </p>
+                        <% }else { %>
+                            <p >0000 0000 0000 0000 </p>
+                            <% } %>
+                 
+                    <div class="inf2">
+                        <% if(locals.nom){ %>
+                             <p id="nom_clien"><%= nom %>  </p>
+                            <% }else { %>
+                                <p id="nom_clien">amady Gueda Badji</p>
+                                <% } %>
+                     <div class="droite">
+                        <% if(locals.mois){ %>
+                              <p id="date_carte"><%= mois%>  </p>
+                            <% }else { %>
+                                <p id="date_carte">11</p>
+                                <% } %>
+                       
+                        <p>/</p>
+                        <% if(locals.annee){ %>
+                           <p id="mois_carte"> <%= annee%></p>
+                            <% }else { %>
+                                <p id="mois_carte">98</p>
+                                <% } %>
+                       
+                     </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+           </div>
+
+
+       <div class="merci">
+        <div class="soumission">
+            <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+        </div>
+
+        <h1>Merci</h1>
+         
+        <P>Nous avons ajoute les informations de ta carte bancaire </P>
+        <button type="submit"  class="boutton" >Continuer</button>
+       </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
